@@ -1,17 +1,79 @@
-<div class="centered">
-	<h1>
-	  {{title}}
-	</h1>
-	<h3>
-	  {{subtitle}}
-	</h3>
-	<nav>
-    <a>Navigation:</a>
-    <ul>
-      <li><a [routerLink]="['']">Home</a></li>
-      <li><a [routerLink]="['transmittables']">Transmittable</a></li>
-      <li><a [routerLink]="['nontransmittable']">Non-Transmittable</a></li>
-    </ul>
-  </nav>
-	<router-outlet></router-outlet>
+<div class="full-container">
+	<div class="row navbar-fixed-top nav-colour">
+		<div class="left">
+			<h1 class="brand">eSTI</h1>
+		</div>
+		<div class="right">
+			<ul>
+				<li><a href="#home">home</a></li>
+			  <li><a href="#about">About STI</a></li>
+			  <li><a href="#diseases">Bolestine</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="web-back" id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8 center-text set-style">
+				<b class="bold-font">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</b>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+</div>
+<div class="container" id="about">
+	<div class="row seperate-top-bottom">
+		<div class="col-sm-12">
+			<h1 class="text-center">About STI</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-4">
+			<h3>Paragraph 1</h3>
+			<p>-</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="col-sm-4">
+			<h3>Paragraph 2</h3>
+			<p>-</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-4">
+			<h3>Paragraph 3</h3>
+			<p>-</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="col-sm-4">
+			<h3>Paragraph 4</h3>
+			<p>-</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+</div>
+<div class="container" id="diseases">
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-5 text-center">
+			<a [routerLink]="['transmittables']">Transmittable</a>
+		</div>
+		<div class="col-sm-5 text-center">
+			<a [routerLink]="['nontransmittable']">Non-Transmittable</a>
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+			<router-outlet></router-outlet>
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
 </div>

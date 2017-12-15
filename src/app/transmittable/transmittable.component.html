@@ -1,12 +1,17 @@
-
-
-<table>
-	<tbody>
-		<tr *ngFor = "let data of toDos">
-			<td><button (click)="myEvent(data.title)">{{data.title}}</button></td>
-		</tr>
-	</tbody>
-</table>
-
-<h1>{{elementToShow.title}}</h1>
-<p>{{elementToShow.content}}</p>
+	<div class="row">
+		<div class="col-sm-4">
+			<div *ngFor = "let data of toDos">
+				<div class="col-sm-12">
+					<button (click)="myEvent(data.title)">{{data.title}}</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-8">
+			<div class="col-sm-10 offset-sm-1">
+				<h1>{{elementToShow.title}}</h1>
+			</div>
+			<div class="col-sm-10 offset-sm-1">
+				<p>{{elementToShow.content}}</p>	
+			</div>
+		</div>
+	</div>
