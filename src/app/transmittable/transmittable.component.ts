@@ -7,6 +7,12 @@ import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 })
 export class TransmittableComponent implements OnInit, AfterViewInit {
 	
+  toDos = [
+  {title: "aaaa", content: "xxXX"},
+  {title: "bbbb", content: "baaabbb"},
+  {title: "cccc", content: "cccwwwwc"}
+  ];
+
 	@ViewChild('para') p1;
 
   constructor() { }

@@ -1,3 +1,12 @@
 <p #para>
   transmittable works!
 </p>
+
+<table>
+	<tbody>
+		<tr *ngFor = "let data of toDos">
+			<td>{{data.title}}</td>
+			<td>{{data.content}}</td>
+		</tr>
+	</tbody>
+</table>
