@@ -9,16 +9,21 @@ import {
 
 import { AppComponent } from './app.component';
 import { TransmittableComponent } from './transmittable/transmittable.component';
+import { HomeComponent } from './home/home.component';
+import { NontransmittableComponent } from './nontransmittable/nontransmittable.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'transmittable', component: TransmittableComponent }
+  { path: '', component: HomeComponent },
+  { path: 'transmittable', component: TransmittableComponent },
+  { path: 'nontransmittable', component: NontransmittableComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    TransmittableComponent
+    TransmittableComponent,
+    HomeComponent,
+    NontransmittableComponent
   ],
   imports: [
     BrowserModule,
