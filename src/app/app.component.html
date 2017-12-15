@@ -5,4 +5,13 @@
 	<h3>
 	  {{subtitle}}
 	</h3>
+	<nav>
+    <a>Navigation:</a>
+    <ul>
+      <li><a [routerLink]="['']">Home</a></li>
+      <li><a [routerLink]="['transmittable']">Transmittable</a></li>
+      <li><a [routerLink]="['nontransmittable']">Non-Transmittable</a></li>
+    </ul>
+  </nav>
+	<router-outlet></router-outlet>
 </div>
