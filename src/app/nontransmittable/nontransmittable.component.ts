@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-nontransmittable',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NontransmittableComponent implements OnInit {
 
+  @ViewChild('para') p1;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  ngAfterViewInit(){
+  	this.p1.nativeElement.innerHTML = "BBBBB";
+  }
 }
