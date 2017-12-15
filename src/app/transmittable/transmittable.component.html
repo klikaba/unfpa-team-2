@@ -1,12 +1,12 @@
-<p #para>
-  transmittable works!
-</p>
+
 
 <table>
 	<tbody>
 		<tr *ngFor = "let data of toDos">
-			<td>{{data.title}}</td>
-			<td>{{data.content}}</td>
+			<td><button (click)="myEvent(data.title)">{{data.title}}</button></td>
 		</tr>
 	</tbody>
 </table>
+
+<h1>{{elementToShow.title}}</h1>
+<p>{{elementToShow.content}}</p>

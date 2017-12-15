@@ -1,26 +1,37 @@
-import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-transmittable',
   templateUrl: './transmittable.component.html',
   styleUrls: ['./transmittable.component.css']
 })
-export class TransmittableComponent implements OnInit, AfterViewInit {
+export class TransmittableComponent implements OnInit {
 	
+  name = '';
+  elementToShow = { title: "", content: "" };
+
   toDos = [
-  {title: "aaaa", content: "xxXX"},
+  {title: "AAAA", content: "xxXX"},
   {title: "bbbb", content: "baaabbb"},
   {title: "cccc", content: "cccwwwwc"}
   ];
 
-	@ViewChild('para') p1;
-
   constructor() { }
 
   ngOnInit() {
+    for(let element of this.toDos){
+      if(element.title == this.name){
+        this.elementToShow = element;
+      }
+    }
   }
 
-  ngAfterViewInit(){
-  	this.p1.nativeElement.innerHTML = "AAAAA";
+  myEvent(event){
+  for(let element of this.toDos){
+      if(element.title == event){
+        this.elementToShow = element;
+      }
+    }
   }
 }

@@ -14,7 +14,9 @@ import { NontransmittableComponent } from './nontransmittable/nontransmittable.c
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'transmittable', component: TransmittableComponent },
+  {
+  path: 'transmittables', component: TransmittableComponent
+  },
   { path: 'nontransmittable', component: NontransmittableComponent }
 ];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nontransmittable',
@@ -6,20 +6,32 @@ import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
   styleUrls: ['./nontransmittable.component.css']
 })
 export class NontransmittableComponent implements OnInit {
+
+  name = '';
+  elementToShow = { title: "", content: "" };
+
   toDos = [
   {title: "Todo1", content: "aaaa"},
   {title: "Todo2", content: "bbbb"},
   {title: "Todo3", content: "cccc"}
   ];
   
-  @ViewChild('para') p1;
-
   constructor() { }
 
   ngOnInit() {
+    for(let element of this.toDos){
+      if(element.title == this.name){
+        this.elementToShow = element;
+      }
+    }
   }
 
-  ngAfterViewInit(){
-  	this.p1.nativeElement.innerHTML = "BBBBB";
+  showNonTransmittable(event){
+    for(let element of this.toDos){
+      if(element.title == event){
+        this.elementToShow = element;
+      }
+    }
   }
+
 }
