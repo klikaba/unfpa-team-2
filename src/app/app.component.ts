@@ -5,12 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
 	elementToShow = { title: "", content: "" };
 
   illnesses = [
   {title: "AAAA", content: "xxXX"},
   {title: "bbbb", content: "baaabbb"},
+  {title: "cccc", content: "cccwwwwc"},
+  {title: "bbbb", content: "baaabbb"},
+  {title: "cccc", content: "cccwwwwc"},
+  {title: "bbbb", content: "baaabbb"},
+  {title: "cccc", content: "cccwwwwc"},
   {title: "cccc", content: "cccwwwwc"}
   ];
 

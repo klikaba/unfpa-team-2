@@ -8,24 +8,14 @@ import {
 } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { TransmittableComponent } from './transmittable/transmittable.component';
-import { HomeComponent } from './home/home.component';
-import { NontransmittableComponent } from './nontransmittable/nontransmittable.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  {
-  path: 'transmittables', component: TransmittableComponent
-  },
-  { path: 'nontransmittable', component: NontransmittableComponent }
+  { path: '', component: AppComponent }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TransmittableComponent,
-    HomeComponent,
-    NontransmittableComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
