@@ -27,7 +27,7 @@
 		</div>
 	</div>
 </div>
-<div class="container" id="about">
+<div class="container gray-back" id="about">
 	<div class="row seperate-top-bottom">
 		<div class="col-sm-12">
 			<h1 class="text-center">About STI</h1>
@@ -69,8 +69,8 @@
 </div>
 <div class="container seperate-top-bottom text-center">
 	<div class="row">
-
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		<div class="col-lg-2 col-md-2"></div>
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 				<div *ngFor = "let data of illnesses">
 					<div class="buttons-charm slight-seperate col-lg-12 col-md-12 col-sm-3 col-xs-3 "(click)="myEvent($event, data.title)">
 						<p class="link-name">{{data.title}}</p>
@@ -78,12 +78,32 @@
 				</div>
 		</div>
 
-		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-			<div class="col-sm-10 col-xs-10 text-center">
+		<div class="col-lg-1 col-md-1"></div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="col-sm-10 col-xs-10 text-center gray-back">
 				<h1>{{elementToShow.title}}</h1>
 				<p>{{elementToShow.content}}</p>	
 			</div>
 		</div>
+	</div>
+</div>
 
+<div class="container-fluid seperate-top-bottom">
+	<div class="row seperate-top-bottom black-back">
+		<div class="col-lg-2 col-md-2">
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+			<p class="footer-text">Email: lorem@ipsum.com</p>
+			<p class="footer-text">Telefon: 000212412412412</p>
+			<p class="footer-text">Info: neki web nesto</p>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+			<p class="footer-padd footer-text">Lorem Ipsum</p>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
+			<p class="footer-padd footer-text">Logo</p>
+		</div>
+		<div class="col-lg-2 col-md-2">
+		</div>
 	</div>
 </div>

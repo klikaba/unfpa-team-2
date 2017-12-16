@@ -5,6 +5,22 @@
     background-color: #f9f9f9;
 }
 
+.gray-back{
+    background-color: #f9f9f9;
+}
+
+.black-back{
+    background-color: black;
+}
+
+.footer-padd{
+    padding-top: 10px;
+}
+
+.footer-text{
+    color: white;
+}
+
 .buttons-charm:active,
 .buttons-charm:focus,
 .buttons-charm:hover,
