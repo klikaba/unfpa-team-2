@@ -20,9 +20,10 @@ export class AppComponent implements OnInit {
     this.elementToShow = this.illnesses[0];
   }
 
-  myEvent(event){
+  myEvent(event, data){
+  console.log(event.path[1].className);
   for(let element of this.illnesses){
-      if(element.title == event){
+      if(element.title == data){
         this.elementToShow = element;
       }
     }
