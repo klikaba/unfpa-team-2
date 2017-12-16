@@ -12,7 +12,8 @@
         "favicon.ico",
         "manifest.json",
         "service-worker.js",
-        "/images/pictures/web-background.jpg"
+        "/images/pictures/web-background.jpg",
+        "/images/pictures/48x48.png"
       ],
       "index": "index.html",
       "main": "main.ts",
