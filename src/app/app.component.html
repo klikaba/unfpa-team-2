@@ -28,9 +28,9 @@
 	</div>
 </div>
 <div class="container" id="about">
-	<div class="row">
-	
-		<div class="col-lg-1 col-md-1"></div>
+
+<div class="row">
+	<div class="col-lg-1 col-md-1"></div>
 
 		<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 text-improve gray-back">
 			<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 ">
@@ -48,7 +48,13 @@
 				<p>-</p>
 				<p>Spolno prenosive infekcije su infekcije koje se dominantno prenose putem spolnog odnosa. Mogu se prenijeti i putem krvi i zaraženih predmeta te sa majke na dijete. Najčešće su sifilis, gonoreja, klamidija i trihomonijaza, hepatitis B, HIV, genitalni herpes, i HPV.</p>
 			</div>
+		</div>
+		<div class="col-lg-1 col-md-1"></div>
+</div>	
 
+<div class="row">
+	<div class="col-lg-1 col-md-1"></div>
+		<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 text-improve gray-back">
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				<h3>Rizici za oboljenje</h3>
 				<p>-</p>
@@ -70,21 +76,41 @@
 		<h1>Bolesti</h1>
 	</div>
 </div>
-<div class="container seperate-top-bottom text-center">
+<div class="container seperate-top-bottom">
 	<div class="row">
 		<div class="col-lg-1 col-md-1"></div>
 		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 				<div *ngFor = "let data of illnesses">
-					<div class="buttons-charm slight-seperate col-lg-12 col-md-12 col-sm-3 col-xs-3 "(click)="myEvent($event, data.title)">
-						<p class="link-name">{{data.title}}</p>
+					<div class="text-center buttons-charm slight-seperate col-lg-12 col-md-12 col-sm-3 col-xs-3 "(click)="myEvent($event, data.title)">
+						<p class="link-name ">{{data.title}}</p>
 					</div>
 				</div>
 		</div>
 
 		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-			<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 text-center gray-back">
+			<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 gray-back">
 				<h1>{{elementToShow.title}}</h1>
-				<p>{{elementToShow.content}}</p>	
+
+				<h3>{{elementToShow.subtitle1}}</h3>
+				<p>{{elementToShow.content1}}</p>
+
+				<h3>{{elementToShow.subtitle2}}</h3>
+				<p>{{elementToShow.content2}}</p>
+
+				<h3>{{elementToShow.subtitle3}}</h3>
+				<p>{{elementToShow.content3}}</p>
+
+				<h3>{{elementToShow.subtitle4}}</h3>
+				<p>{{elementToShow.content4}}</p>
+
+				<h3>{{elementToShow.subtitle5}}</h3>
+				<p>{{elementToShow.content5}}</p>
+
+				<h3>{{elementToShow.subtitle6}}</h3>
+				<p>{{elementToShow.content6}}</p>
+
+				<h3>{{elementToShow.subtitle7}}</h3>
+				<p>{{elementToShow.content7}}</p>
 			</div>
 			<div class="col-lg-2 col-md-2"></div>
 		</div>
