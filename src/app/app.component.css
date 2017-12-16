@@ -6,6 +6,13 @@
     background-color: #f9f9f9;
 }
 
+.buttons-charm:active,
+.buttons-charm:focus,
+.buttons-charm:hover,
+.selection{ 
+ background-color: #dd9a9c ;
+}
+
 .clicked {
     background-color: green;
 }
