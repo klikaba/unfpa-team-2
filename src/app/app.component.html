@@ -1,14 +1,17 @@
-<div class="full-container">
+<div class="container-fluid">
 	<div class="row navbar-fixed-top nav-colour">
-		<div class="left">
-			<h1 class="brand">eSTI</h1>
+		<div class="col-md-1 col-sm-1 col-xs-1"></div>
+		<div class="col-sm-11 col-md-3 col-xs-11">
+			<h1 class="brand text-center">eSTI</h1>
 		</div>
-		<div class="right">
-			<ul>
-				<li><a href="#home">Pocetna</a></li>
-			  <li><a href="#about">O Spolnom Zdravlju</a></li>
-			  <li><a href="#diseases">Bolesti</a></li>
-			</ul>
+		<div class="col-sm-12 col-md-8 col-xs-12">
+			<div class="right">
+				<ul>
+					<li><a href="#home" class="nav-links">Pocetna</a></li>
+				  <li><a href="#about" class="nav-links">O Spolnom Zdravlju</a></li>
+				  <li><a href="#diseases" class="nav-links">Bolesti</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
@@ -16,7 +19,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2"></div>
-			<div class="col-sm-8 center-text set-style">
+			<div class="col-sm-8 center-text set-style text-improve">
 				<b class="bold-font">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</b>
 			</div>
 			<div class="col-sm-2"></div>
@@ -29,7 +32,7 @@
 			<h1 class="text-center">About STI</h1>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row text-improve">
 		<div class="col-sm-2"></div>
 		<div class="col-sm-4">
 			<h3>Paragraph 1</h3>
@@ -59,21 +62,34 @@
 	</div>
 </div>
 <div class="container" id="diseases">
-	<div class="row">
-		<div class="col-sm-1"></div>
-		<div class="col-sm-5 text-center">
-			<a [routerLink]="['transmittables']">Transmittable</a>
-		</div>
-		<div class="col-sm-5 text-center">
-			<a [routerLink]="['nontransmittable']">Non-Transmittable</a>
-		</div>
-		<div class="col-sm-1"></div>
+	<div class="row seperate-top-bottom text-center"> 
+		<h1>Bolesti</h1>
 	</div>
+
 	<div class="row">
-		<div class="col-sm-1"></div>
-		<div class="col-sm-10">
-			<router-outlet></router-outlet>
+		<div class="col-md-1 col-sm-1"></div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="row">
+				<div *ngFor = "let data of illnesses">
+					<div class="buttons-charm slight-seperate col-lg-12 col-md-3 col-sm-3 col-xs-3 "(click)="myEvent(data.title)">
+						<p class="link-name">{{data.title}}</p>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-sm-1"></div>
+		<div class="col-xs-1"></div>
+
+		<div class="col-sm-6">
+			<div class="col-sm-1 col-xs-1"></div>
+			<div class="col-sm-10 col-xs-10 text-center">
+				<h1>{{elementToShow.title}}</h1>
+			</div>
+			<div class="col-sm-10 col-xs-10 text-center">
+				<p>{{elementToShow.content}}</p>	
+			</div>
+			<div class="col-sm-1 col-xs-1"></div>
+		</div>
+
+		<div class="col-sm-1 col-xs-1"></div>
 	</div>
 </div>
